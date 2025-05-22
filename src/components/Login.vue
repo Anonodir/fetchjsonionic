@@ -58,7 +58,7 @@ const handleLogin = async () => {
 
     console.log(response.data);
 
-    if (response.data.status === 'succes') {
+    if (response.data.status === 'success') {
       localStorage.setItem('user', JSON.stringify(response.data.data));
 
       alertHeader.value = 'Login Berhasil';
